@@ -1,0 +1,239 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> */
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Heebo, sans-serif;
+}
+/* hide scrollbar */
+html::-webkit-scrollbar {
+    display: none;
+  }
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* header and intro */
+/* header */
+.con-1 {
+    background-image: url(images/desktop/image-header.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+}
+/* navi bar */
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+}
+li {
+    width: 23%;
+    text-align: center;
+}
+button {
+    display: inline-block;
+    position: relative;
+    border-style: none;
+    background-color: transparent;
+    font-family: Heebo, sans-serif;
+}
+header button {
+    color: white;
+    border-radius: 40px;
+    padding: 1em;
+}
+header button:hover, 
+header button:focus {
+    background-color: hsl(0, 0%, 100%, 0.2);
+    text-transform: uppercase;
+    font-family: Fraunces;
+    cursor: pointer;
+}
+/* intro */
+h1 {
+font-weight: 900;
+font-family: Fraunces;
+font-size: 3rem;
+color: white;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 0.5rem;
+padding: 1rem;
+}
+/* layout for service */
+
+.service-con {
+    display: flex;
+}
+.service {
+    width: 50vw;
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.words {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 10% 5%;
+}
+.content {
+    box-sizing: border-box;
+    padding: 20%;
+    padding-top: 60%;
+    text-align: center;
+}
+.graphic-design {
+    color: hsl(167, 40%, 24%);
+}
+.photography {
+    color: hsl(198, 62%, 26%);
+}
+
+/* service photos */
+.img1 {
+    background-image: url(images/desktop/image-transform.jpg);
+}
+.img2 {
+    background-image: url(images/desktop/image-stand-out.jpg);
+}
+.img3 {
+    background-image: url(images/desktop/image-graphic-design.jpg);
+}
+.img4 {
+    background-image: url(images/desktop/image-photography.jpg);
+}
+
+/* Typo for service */
+h2 {
+    font-weight: 900;
+    font-family: Fraunces;
+    margin: 0;
+}
+.learn-more {
+    text-transform: uppercase;
+    font-family: Fraunces;
+    padding: 0 0.5em;
+    text-decoration: none;
+    color: black;
+}
+.learn-more::after {
+    content: '';        
+    display: block;
+    width: 0;
+    height: 10px;        
+    transition: width 0.2s;
+    border-radius: 10px;
+}
+.learn-more:hover::after {
+    width: 7.2rem;
+}
+.learn-transform::after {
+    background: hsl(51, 100%, 49%);
+}
+.learn-stand-out::after {
+    background: hsl(7, 99%, 70%);
+}
+p {
+    padding: 1.5rem 0;
+}
+/* client testimonials layout */
+.con-3 {
+    padding: 8rem 5rem;
+    text-align: center;
+}
+.client-fb {
+    display: flex;
+    justify-content: space-between;
+}
+.client {
+    margin: 0 2rem;
+}
+/* client images */
+.client img {
+    border-radius: 100%;
+    width: 5rem;
+}
+/* client typo */
+.con-3 h2 {
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-family: Fraunces;
+    padding-bottom: 3rem;
+}
+.con-3 h3 {
+    font-weight: 900;
+    font-family: Fraunces;
+    margin: 0;
+}
+.con-3 sub {
+    color: hsl(210, 4%, 67%);
+}
+/* project layout */
+.con-4 {
+    display: flex;
+}
+.con-4 div {
+    width: 25%;
+}
+.con-4 img {
+    width: 100%;
+    height: 100%;
+}
+/* contact layout */
+.con-5 {
+    background-color: hsl(168, 34%, 68%);
+    text-align: center;
+    padding: 4rem 0;
+    margin: auto;
+}
+/* logo color change */
+.filter-logo {
+    filter: invert(53%) sepia(6%) saturate(2821%) hue-rotate(118deg) brightness(90%) contrast(82%);
+}
+/* navi bar */
+.con-5 ul {
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+footer button {
+    color: hsl(168, 34%, 41%);
+    padding: 2rem;
+}
+footer button:hover, 
+footer button:focus {
+    color: white;
+    cursor: pointer;
+}
+/* sns menu */
+#sns-menu {
+    width: 18%;
+    padding-top: 2rem;
+}
+#sns-menu img:hover,
+#sns-menu img:focus {
+    filter: brightness(0) invert(1);
+}
