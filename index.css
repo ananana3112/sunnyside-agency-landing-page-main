@@ -48,6 +48,7 @@ ul {
 li {
     width: 23%;
     text-align: center;
+    padding-left: 0;
 }
 button {
     display: inline-block;
@@ -216,10 +217,11 @@ p {
 }
 /* navi bar */
 .con-5 ul {
-    justify-content: center;
-    text-align: center;
+    width: 35%;
     margin: auto;
-}
+    justify-content: space-evenly;
+} 
+
 footer button {
     color: hsl(168, 34%, 41%);
     padding: 2rem;
@@ -228,6 +230,8 @@ footer button:hover,
 footer button:focus {
     color: white;
     cursor: pointer;
+    padding: auto;
+    margin: auto;
 }
 /* sns menu */
 #sns-menu {
@@ -237,4 +241,5 @@ footer button:focus {
 #sns-menu img:hover,
 #sns-menu img:focus {
     filter: brightness(0) invert(1);
+    cursor: pointer;
 }
